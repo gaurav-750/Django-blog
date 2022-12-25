@@ -3,7 +3,9 @@ header h1 a {
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  /* font-family: "Source Sans Pro", sans-serif; */
+  /* font-family: monospace; */
+  font-family: "McLaren", cursive;
   font-size: 18px;
 }
 header {
