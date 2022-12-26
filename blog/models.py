@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.urls import reverse
 # Create your models here.
 
 
@@ -10,3 +10,7 @@ class Post(models.Model):
 
     def __str__(self) -> str:
         return self.title
+
+    # telling django where to redirect after Post
+    def get_absolute_url(self):
+        return reverse("post_detail", kwargs={"pk": self.id})
